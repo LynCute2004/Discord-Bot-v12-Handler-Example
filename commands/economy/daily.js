@@ -18,20 +18,13 @@ module.exports = {
         if(daily !== null && timeout - (Date.now() - daily) > 0) {
             let time = ms(timeout - (Date.now() - daily))
 
-            const dailyEmbed = new MessageEmbed()
-            .setDescription(`<:tick:879611274428821555> Bạn đã nhận phần thưởng hàng ngày, \n <:cooldowncmd:884990928010502175> Hãy quay lại sau:  **${time.hours} giờ, ${time.minutes} phút và ${time.seconds} giây**!`)
-            .setColor("WHITE")
-
-            return message.channel.send(dailyEmbed)
+            return message.channel.send(`<:tick:879611274428821555> Bạn đã nhận phần thưởng hàng ngày, \n <:cooldowncmd:884990928010502175> Hãy quay lại sau:  **${time.hours} giờ, ${time.minutes} phút và ${time.seconds} giây**!`)
         } else {
             db.add(`money_${message.guild.id}_${user.id}`, amount)
             db.set(`daily_${message.guild.id}_${user.id}`, Date.now())
 
             const dailySuccess = new MessageEmbed()
-            .setDescription(`<:tick:879611274428821555> Bạn đã nhận được tiền thưởng hàng ngày là: **$${amount}** <:anana_money:885060454202900490>`)
-            .setColor("WHITE")
-
-            message.channel.send(dailySuccess)
+            message.channel.send(`<:tick:879611274428821555> Bạn đã nhận được tiền thưởng hàng ngày là: **$${amount}** <:anana_money:885060454202900490>`)
         }
     }
 }
