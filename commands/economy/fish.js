@@ -16,12 +16,7 @@ module.exports = {
     let timeout = 20000;
     if (author !== null && timeout - (Date.now() - author) > 0) {
       let time = ms(timeout - (Date.now() - author));
-
-      const embed = new MessageEmbed()
-        .setColor(`WHITE`)
-        .setDescription(`🎣**${message.author}**, Bạn đã vừa câu cá. <:cooldowncmd:884990928010502175> Vui lòng chờ sau: **${time.minutes} phút, ${time.seconds} giây** để tiếp tục!.`)
-        .setTimestamp()
-      message.channel.send(embed)
+      message.channel.send(`🎣**${message.author.username}**, Bạn đã vừa câu cá. <:cooldowncmd:884990928010502175> Vui lòng chờ sau: **${time.minutes} phút, ${time.seconds} giây** để tiếp tục!.`)
 
     } else {
 
@@ -44,11 +39,9 @@ module.exports = {
       let fishresult = Math.floor((Math.random() * fish.length));
       let amount = Math.floor(Math.random() * 100) + 1;
       if (!args[0]) {
-        const embed = new MessageEmbed()
-          .setColor(`WHITE`)
-          .setDescription(`🎣**${message.author}** đã câu được ${fish[fishresult]} và nhận được **$${amount}** <:anana_money:885060454202900490>`)
-          .setTimestamp()
-        message.channel.send(embed)
+        const msg = await message.channel.send(`${message.author.username} đang câu cá...`);
+			msg.edit(`🎣**${message.author.username}** đã câu được ${fish[fishresult]} và nhận được **$${amount}** <:anana_money:885060454202900490>`)
+
         db.add(`money_${message.guild.id}_${user.id}`, amount)
         db.add(`fish_${message.guild.id}_${user.id}`, Date.now())
 
