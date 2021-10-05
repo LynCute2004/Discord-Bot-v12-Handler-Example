@@ -1,2 +1,6 @@
-# annabot
-Anna V1
+# Discord Bot v12 Handler Example
+
+*- ✔️ Project by LynCute2004*
+
+
+
