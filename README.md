@@ -6,7 +6,7 @@
 
 **Language dev: DiscordJS**
 
-[Free download and use this code]
+
 
 
 
