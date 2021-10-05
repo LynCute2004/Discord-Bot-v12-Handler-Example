@@ -1,4 +1,4 @@
-const { PREFIX, LAVA_HOST, LAVA_PASSWORD, LAVA_PORT  } = require('../../config');
+const { PREFIX } = require('../../config');
 const { MessageEmbed } = require("discord.js")
 
 module.exports = async bot => {
