@@ -2,8 +2,9 @@
 
 *- ✔️ Project by LynCute2004*
 
-**Language bot: Vietnamese
-Language dev: DiscordJS**
+**Language bot: Vietnamese**
+
+**Language dev: DiscordJS**
 
 [Free download and use this code]
 
