@@ -1,7 +1,7 @@
 {
   "name": "discord-moderation-bot-v12",
   "version": "1.0.0",
-  "description": "",
+  "description": "Example bot JS v12 ",
   "main": "index.js",
   "dependencies": {
     "@discordjs/opus": "^0.5.0",
