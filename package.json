@@ -1,6 +1,6 @@
 {
-  "name": "discord-moderation-bot",
-  "version": "2.0.0",
+  "name": "discord-moderation-bot-v12",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "dependencies": {
@@ -45,6 +45,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Manav Garg",
+  "author": "LynCute2004",
   "license": "ISC"
 }
