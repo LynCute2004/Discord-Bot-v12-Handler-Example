@@ -1,5 +1,6 @@
+//Change your value config
 exports.TOKEN = "your-token";
 
-exports.PREFIX = '.';
+exports.PREFIX = 'your-prefix';
 
-exports.OWNER_ID = "573805531773272064"
+exports.OWNER_ID = "owner-id"
