@@ -4,7 +4,7 @@
 
 **Language bot: Vietnamese**
 
-**Language dev: DiscordJS**
+**Environment: DiscordJS**
 
 
 
